@@ -1,0 +1,10 @@
+Most part of PocketClive is released under the GNU Public License (GPL), see http://www.gnu.org for details or the source distribution of PocketClive, which features a copy of the license. Basically GPL gives you the freedom to take PocketClive, modify it to meet your needs and to redistribute it, if and only if you make the source code available freely to the public (still under the GPL license).
+
+The graphical framework used by PocketClive is not released under GPL, instead it is (C) Jacco Bikker, with the following text : 
+
+"If you want to use EasyCE for commercial applications
+you should let me know. I will ask you a small fee,
+since I spend a lot of time developing this software.
+For freeware products, EasyCE can be used freely."
+
+The Spectrum 48k and 128k roms are (C) Amstrad, but they have granted free distribution for emulators. 

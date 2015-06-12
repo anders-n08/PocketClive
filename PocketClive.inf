@@ -1,0 +1,118 @@
+[Version]
+Signature = "$Windows NT$"
+Provider = "Anders Holmberg"
+CESignature = "$Windows CE$"
+
+[CEStrings]
+AppName="PocketClive"
+CompanyName="Anders Holmberg"
+InstallDir=%CE1%\%AppName%
+
+[Strings]
+sh3_cpu = 10003
+sh4_cpu = 10005
+mips_cpu = 4000
+strongarm_cpu = 2577
+armcpu = 1824
+reg_path = Software\%CompanyName%\%AppName%
+
+[CEDevice]
+UnsupportedPlatforms = "Jupiter","HPC"  ; Does not support pltfrm1
+VersionMin = 3.0
+VersionMax = 3.01
+
+[CEDevice.ARM]
+ProcessorType = %arm_cpu%
+
+[CEDevice.MIPS]
+ProcessorType = %mips_cpu%
+
+[CEDevice.SH3]
+ProcessorType = %sh3_cpu%
+
+[CEDevice.SA]
+ProcessorType = %strongarm_cpu%
+
+[DefaultInstall]
+CopyFiles = Files.Application, Files.Shared, Files.Roms, Files.Tapes
+CEShortcuts = Shortcuts
+
+[SourceDisksNames]
+1 = ,"Common files",,Common
+
+[SourceDisksNames]
+3 = ,"Rom files",,Roms
+
+[SourceDisksNames]
+4 = ,"Tape files",,Tapes
+
+[SourceDisksNames.ARM]
+2 = ,"ARM files",,ARMRel
+
+[SourceDisksNames.MIPS]
+2 = ,"MIPS files",,MIPSRel
+
+[SourceDisksNames.SA]
+2 = ,"ARM files",,ARMRel
+
+[SourceDisksNames.SH3]
+2 = ,"SH3 files",,sh3Rel
+
+[SourceDisksFiles]
+CliveLogo.tga.gz = 1
+configure.tga.gz = 1
+keyboard.tga.gz = 1
+load.tga.gz = 1
+virt_joy.tga.gz = 1
+tape.tga.gz = 1
+Images.tga.gz = 1
+48.rom = 1
+128-0.rom = 1
+128-1.rom = 1
+plus2-0.rom = 1
+plus2-1.rom = 1
+plus3-0.rom = 1
+plus3-1.rom = 1
+plus3-2.rom = 1
+plus3-3.rom = 1
+PocketClive.exe = 2
+Contents.roms = 3
+Contents.tapes = 4
+
+[DestinationDirs]
+Files.Application = 0,%CE1%\%AppName%  ;\Target\AppName
+Files.Shared      = 0,%CE1%\%AppName%     ;\Windows
+Files.Roms        = 0,%CE1%\%AppName%\Roms
+Files.Tapes       = 0,%CE1%\%AppName%\Tapes
+Shortcuts         = 0,%CE2%\Help        ;\Windows\Help
+
+[Files.Application]
+"PocketClive.exe",,,0x00000001      ; rename, and warn if skipped
+
+[Files.Shared]
+"CliveLogo.tga.gz",,,0x80000000  ; rename, and mark as shared
+"configure.tga.gz",,,0x80000000  ; rename, and mark as shared
+"keyboard.tga.gz",,,0x80000000   ; rename, and mark as shared
+"load.tga.gz",,,0x80000000 ; rename, and mark as shared
+"virt_joy.tga.gz",,,0x80000000   ; rename, and mark as shared
+"tape.tga.gz",,,0x80000000   ; rename, and mark as shared
+"Images.tga.gz",,,0x80000000   ; rename, and mark as shared
+"48.rom",,,0x80000000   ; rename, and mark as shared
+"128-0.rom",,,0x80000000   ; rename, and mark as shared
+"128-1.rom",,,0x80000000   ; rename, and mark as shared
+"plus2-0.rom",,,0x80000000   ; rename, and mark as shared
+"plus2-1.rom",,,0x80000000   ; rename, and mark as shared
+"plus3-0.rom",,,0x80000000   ; rename, and mark as shared
+"plus3-1.rom",,,0x80000000   ; rename, and mark as shared
+"plus3-2.rom",,,0x80000000   ; rename, and mark as shared
+"plus3-3.rom",,,0x80000000   ; rename, and mark as shared
+
+[Files.Roms]
+"Contents.roms",,,0x80000000 ; rename, and mark as shared
+
+[Files.Tapes]
+"Contents.tapes",,,0x80000000 ; rename, and mark as shared
+
+[Shortcuts]
+%AppName%,0,PocketClive.exe,%CE17%
+

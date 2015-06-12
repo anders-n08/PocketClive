@@ -1,0 +1,66 @@
+PocketClive is assembled and programmed by Anders Holmberg, reachable at aagholmberg@yahoo.se
+
+Sources of inspiration for PocketClive
+======================================
+
+PocketClive uses code and inspiration from the following sources : 
+
+---
+
+FUSE - Free Unix Spectrum Emulator version 0.3.1 - (C) Philip Kendall
+
+FUSE is an Unix Spectrum emulator that is copyrighted under the GPL 
+license. PocketClive borrows freely from the source code of FUSE: 
+
+* The Z80 CPU emulation runs on the PocketPC almost unchanged
+
+* Parts of the keyboard emulation
+
+* The snapshot load library
+
+* Other bits and pieces
+
+If looking at the source code of PocketClive the parts that are 
+copied more or less unchanged reside in the PocketClive\FUSE 
+directory; but bits and pieces can be found in the rest of the code. 
+
+FUSE can be found at 
+http://www.srcf.ucam.org/~pak21/spectrum/fuse.html or at the World of 
+Spectrum http://www.worldofspectrum.org.
+
+---
+
+EasyCE - Game programming framework for PocketPC - (C) Jacco Bikker
+
+EasyCE is a library that makes it easy to develop GAPI (that is 
+Microsoft Game Programming API) applications for different flavours 
+of PocketPCs. PocketClive uses an almost unchanged version of EasyCE, 
+the only change being that the "arcade" like font used for printing 
+text has been changed to the trusty old Spectrum font. The library 
+can be found at http://pocketmatrix.com/phantom. 
+
+---                      
+
+MESS - Multi Emulator Super System - (C) The MESS Team
+
+PocketClive does not contain any source code from the MESS project, 
+but the project (and the source code) has been a major source of 
+inspiration. The project can be found at http://mess.emuverse.com.
+
+---
+
+zx32 - ZX Spectrum Emulator for Windows - (C) Vaggelis Kapartzianis
+
+The virtual keyboard in PocketClive is a highly modified version of 
+the picture that can be found in the zx32 Spectrum emulator (another 
+favourite of mine). This emulator can also be found at 
+http://worldofspectrum.org.
+
+---
+
+A Day in the Life - Spectrum game - (C) Stephen J. Redman/Micromega
+
+The icon for PocketClive is originally from the old Spectrum game, A 
+Day in the Life (and is it not one of the best sprites ever 
+produced).
+
