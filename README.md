@@ -31,7 +31,7 @@ PocketClive supports a virtual keyboard that operates just like the keyboard on 
 
 Note : Backspace can be reached by pressing CAPS SHIFT and 0.
 
-![](keyboard.png)  
+![](Doc/keyboard.png)  
 
 The keyboard also has a number of action buttons on the bottom row :
 
@@ -43,33 +43,33 @@ The keyboard also has a number of action buttons on the bottom row :
 
 When switched to the virtual joystick the keyboard image disappears and 9 squares representing the 8 directions on a joystick and a fire button appears. This virtual joystick can be used together with the joypad and buttons on your PocketPC. The joypad is priority over the virtual joystick, i.e. if the joypad is pressed to the right and the virtual joystick to the left Miner Willy will move to the right (but it is possible to combine e.g. up and right).
 
-**Loading snapshots** ![](disk.png)
+**Loading snapshots** ![](Doc/disk.png)
 
 Snapshots are loaded by pressing the disk button (PocketClive must be in emulation mode otherwise this button is deactivated).
 
-![](load_snap.png)
+![](Doc/load_snap.png)
 
 Snapshots are sorted in alphabetic order and to load just point the pen to the name and click. Snapshots can be in either .sna or .z80 format. If you have snapshots in other formats there are conversion tools available from <http://www.worldofspectrum.org>. When loading a snapshot PocketClive automatically switches between a 48k model and a 128k model depending on the snapshot (this is not evident in the configuration screen where the model the user has last choosen is displayed, this is also the model that PocketClive returns to after a reset).
 
-**Loading tapes ![](tape.png)**
+**Loading tapes ![](Doc/tape.png)**
 
 Tapes are *not* loaded but prepared using the tape screen. This screen can be reached using the tape button (PocketClive must be in emulation mode otherwise this button is deactivated).
 
-![](load_tape.png)
+![](Doc/load_tape.png)
 
 Tape files are sorted in alphabetic order and to prepare a tape file just point the pen to the name and click. This will return PocketClive to the emulation screen and to actually load the tape file LOAD "" must be typed into the Spectrum screen (to type " press SYMBOL SHIFT and P). If the emulator is not in Spectrum BASIC mode (e.g. if a game is running) it must be reseted (see configuration screen).
 
-![](load.png)
+![](Doc/load.png)
 
 If the tape file is in .tap format the program should load instantly when ENTER is pressed.
 
 If the tape file is in .tzx format the emulated tape player needs to be started after ENTER has been pressed (the tape player symbols are only shown if the last tape file choosen was a .tzx file).
 
-![](tape_player.png)
+![](Doc/tape_player.png)
 
 Press the green play symbol to start the tape player. Now the .tzx file will load just like on a real Spectrum (so be prepared to wait). The emulated tape play can be stopped with the red stop symbol and the tape can be rewinded by the yellow rewind symbol.
 
-**Configuration ![](configure.png)**
+**Configuration ![](Doc/configure.png)**
 
 From the configuration screen the following actions can be taken :
 
@@ -78,7 +78,7 @@ From the configuration screen the following actions can be taken :
 -   Reset the emulator
 -   Exit the emulator
 
-![](manual1.png)
+![](Doc/manual1.png)
 
 All settings are stored in the registry of the PocketPC so there is no need to set them each time PocketClive is started.
 
@@ -125,7 +125,7 @@ This feature configures which keys that shall be used by the user defined joysti
 
 The user can save the current game / program in .z80 format. Just enter the name (without the .z80 that will be added automatically) and press SAVE. The snapshot is saved in the directory \<INSTALL DIR\>\\Roms.
 
-![](manual2.png)
+![](Doc/manual2.png)
 
 **Reset emulator**
 
@@ -159,11 +159,11 @@ This section describes both how to download games to your PocketPC *and* how to 
 
 To download games from your desktop PC to the PocketPC you must have Microsoft ActiveSync up and running (see the documentation that came with your PocketPC for troubleshooting the connection). Open up the ActiveSync window (see picture below) and press Explore.
 
-![](instal1.png)
+![](Doc/instal1.png)
 
 This will bring a window showing the context of your PocketPC (see picture below). Note that your are always directed to the \\My Documents directory of the PocketPC and you have to double-click the My Pocket PC icon to get to the root of the file system on your PocketPC.
 
-![](instal2.png)
+![](Doc/instal2.png)
 
 **Downloading games to your PocketPC**
 
@@ -171,7 +171,7 @@ All snapshots (.sna and .z80) must be installed in a directory called Roms which
 
 In exactly the same way all tape files (.tap and .tzx) has to be installed to a directory called Tapes.
 
-![](instal3.png)
+![](Doc/instal3.png)
 
 **Installing GAPI on your device**
 
