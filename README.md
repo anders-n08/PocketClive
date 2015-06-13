@@ -1,4 +1,6 @@
-# PocketClive
+# PocketClive 
+
+![](Doc/CliveLogo.png)  
 
 ZX Spectrum emulator for PocketPC - last updated 2002-06-06. 
 
